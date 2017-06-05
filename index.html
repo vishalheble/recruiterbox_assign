@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recruiterbox</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/wow.min.js"></script>
+    <script>
+    function sendmail() {
+        document.getElementById("sendmail").innerHTML = "<img src='img/tick.png' height='20px' width='20px'>&nbsp;Message Sent! Thanks for reaching out! Someone from our team will contact you soon!";
+    }
+    </script>
+    <script>
+    new WOW().init();
+    </script>
+</head>
+
+<body>
+    <!--##################################### Navigation tab list starts here ################################-->
+    <ul class="nav nav-tabs navbar-right">
+        <li><a href="#chat" data-toggle="tab"><span class="glyphicon glyphicon-comment"></span>&nbsp;Live Chat</a></li>
+        <li><a href="#faq" data-toggle="tab"><span class="glyphicon glyphicon-search"></span>&nbsp;FAQ</a></li>
+        <li><a href="#mail" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Mail Us</a></li>
+        <li><span class="glyphicon glyphicon-minus-sign minimize"></span></li>
+    </ul>
+    <!--####################################### Navigation tab list Ends here ###############################-->
+    <!--###################################### Navigation tab content starts here ###########################-->
+    <div class="tab-content">
+        <!-- tab content for FAQ starts here -->
+        <div class="tab-pane active maintabcontent wow animated bounceInLeft" id="faq">
+            <div class="tabc1">
+                <div class="input-group search">
+                    <span class="input-group-addon"><i class="material-icons" style="font-size: 14px">search</i></span>
+                    <input type="text" class="form-control " placeholder="What can we help you with? Start typing your question">
+                </div>
+                <div class="option1 col-lg-4">
+                    <i class="material-icons" style="">tab</i>
+                    <br>
+                    <a href="#">Sharing Openings</a>
+                </div>
+                <div class="option1 col-lg-4">
+                    <i class="material-icons" style="">settings</i>
+                    <br>
+                    <a href="#">Managing Openings</a>
+                </div>
+                <div class="option1 col-lg-4">
+                    <i class=" material-icons" style="">note_add</i>
+                    <br>
+                    <a href="#">Managing Candidates</a>
+                </div>
+                <div class="option2 col-lg-4">
+                    <i class=" material-icons" style="">perm_identity</i>
+                    <br>
+                    <a href="#">Account Management</a>
+                </div>
+                <div class="option2 col-lg-4">
+                    <i class=" material-icons" style="">tab</i>
+                    <br>
+                    <a href="#">Sourcing Candidates</a>
+                </div>
+                <div class="option2 col-lg-4">
+                    <i class="material-icons" style="">tab</i>
+                    <br>
+                    <a href="#">Reporting</a>
+                </div>
+            </div>
+            <div class="tabc2">
+                <p>Prefer email instead?</p>
+                <button class="btn btn-default wow animated shake" id="txt"><i class="tiny material-icons">email</i>&nbsp;write to us</button>
+                <br>
+                <br>
+                <h6>We are super quick in responding to your queries</h6>
+            </div>
+        </div>
+        <!-- tab content for FAQ ends here -->
+        <!-- tab content for mail starts here -->
+        <div class="tab-pane mailtab wow animated bounceInLeft" id="mail">
+            <p id="sendmail"></p>
+            <div class="input-group">
+                <div class="tabc3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" size="20px" class="form-control" name="" style="width:500px" placeholder="To:support@recruiterbox.com" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" size="20px" class="form-control" name="subject" style="width:500px" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <textarea rows="4" cols="68" name="message" placeholder="Message..." required></textarea>
+                    </div>
+                    <div class="row" style="float: left">
+                        <a href="#"><i class="material-icons">attachment</i>Attach files</a>
+                        <button class="btn btn-primary wow animated shake" onclick="sendmail()">Send Mail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tab content for mail ends here -->
+        <!-- tab content for chat starts here -->
+        <div class="tab-pane livechat wow animated bounceInLeft" id="chat">
+            <div class="chatwidget">
+                <a href="#" class="wow animated shake">Click for Chat</a>
+            </div>
+        </div>
+        <!-- tab content for chat ends here -->
+    </div>
+    <!--###################################### Navigation tab content ends here ###########################-->
+    <!-- Script tags for required libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
